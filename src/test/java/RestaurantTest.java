@@ -64,23 +64,27 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+
     //<<<<<<<<<<<<<<<<<<<<<<<COST>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     @Test
+
     public void selected_item_from_list_should_return_order_cost_after_adding(){
         int totalCostOfSelectedItems;
         selectedItemsForCalculatingCost=restaurant.getMenu();
+
         totalCostOfSelectedItems = restaurant.getTotalCost(selectedItemsForCalculatingCost) ;
         assertEquals(388, totalCostOfSelectedItems);
     }
 
     @Test
+
     public void removing_selected_item_from_list_should_return_reduced_order_cost(){
         selectedItemsForCalculatingCost=restaurant.getMenu();
         selectedItemsForCalculatingCost.remove(1);
+
         int totalCostOfSelectedItems;
         totalCostOfSelectedItems = restaurant.getTotalCost(selectedItemsForCalculatingCost) ;
         assertEquals(119, totalCostOfSelectedItems);
-
     }
 
 

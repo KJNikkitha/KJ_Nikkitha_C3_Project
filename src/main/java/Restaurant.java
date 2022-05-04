@@ -71,11 +71,11 @@ public class Restaurant {
     }
 
     public int getTotalCost(List<Item> selectedItemsForCalculatingCost) {
+        
         int totalCost = 0;
         for (Item item: selectedItemsForCalculatingCost) {
             totalCost = totalCost + item.getPrice();
         }
-
         return totalCost;
     }
 
