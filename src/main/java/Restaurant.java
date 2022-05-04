@@ -75,6 +75,7 @@ public class Restaurant {
         for (Item item: selectedItemsForCalculatingCost) {
             totalCost = totalCost + item.getPrice();
         }
+
         return totalCost;
     }
 

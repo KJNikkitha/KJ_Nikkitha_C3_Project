@@ -80,6 +80,7 @@ class RestaurantTest {
         int totalCostOfSelectedItems;
         totalCostOfSelectedItems = restaurant.getTotalCost(selectedItemsForCalculatingCost) ;
         assertEquals(119, totalCostOfSelectedItems);
+
     }
 
 
